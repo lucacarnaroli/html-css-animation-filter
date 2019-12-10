@@ -149,27 +149,31 @@
 }
 }
 
-.ex-11-icon {
-  animation: circle 1s infinite linear;
-}
-@keyframes circle {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(-360deg);
-}
-}
 .ex-11-icon:hover {
-  animation-direction: reverse;
-  animation: spin 1s infinite linear;
+  animation: spin 2s infinite linear;
 }
 @keyframes spin {
   from {
     transform: rotate(0);
   }
+  90% {
+    transform: rotate(260deg);
+  }
   to {
-    transform: rotate(240deg);
-    animation-direction: reverse;
+    transform: rotate(0deg);
+
 }
 }
+
+/* .ex-12-buttom {
+  animation-play-state: running;
+  animation: buttom 3s ;
+}
+@keyframes buttom {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
